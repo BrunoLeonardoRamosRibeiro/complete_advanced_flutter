@@ -36,15 +36,15 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_svg: ^0.22.0
   retrofit: ^2.0.1
-  analyzer: ^2.6.0
+  analyzer: ^1.7.0
   dio: ^4.0.0
-  json_serializable: ^6.0.0
+  json_serializable: ^4.1.4
 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  retrofit_generator: ^2.0.1+2
+  retrofit_generator: ^2.0.1
   build_runner: ^2.1.4
 
   # The "flutter_lints" package below contains a set of recommended lints to
