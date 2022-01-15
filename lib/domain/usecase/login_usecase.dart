@@ -10,10 +10,13 @@ class LoginUseCase implements BaseUseCase<LoginUseCaseInput, Authentication>{
   Repository _repository; /// Recebe um contrato tipo repository;
   LoginUseCase(this._repository);
 
+
   @override
   Future<Either<Failure, Authentication>> execute(LoginUseCaseInput input) async {
     DeviceInfo deviceInfo = await getDeviceDetails();
-    return await _repository.login(LoginRequest(input.email, input.password, deviceInfo.identifier, deviceInfo.name));
+    // var result = await _repository.login(LoginRequest(input.email, input.password, deviceInfo.identifier, deviceInfo.name));
+    // return Right(Authentication());
+    throw UnimplementedError();
   }
 
 }
