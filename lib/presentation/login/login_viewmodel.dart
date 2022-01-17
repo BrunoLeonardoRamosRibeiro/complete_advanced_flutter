@@ -44,18 +44,18 @@ class LoginViewModel extends BaseViewModel
   /// Entradas / Inputs
   @override
   login() async {
-    // (await _loginUseCase.execute(
-    //         LoginUseCaseInput(loginObject.userName, loginObject.password)))
-    //     .fold(
-    //   (failure) {
-    //     // Left - Failure
-    //     print(failure.message);
-    //   },
-    //   (data) {
-    //     // Success -> data
-    //     print(data.customer?.name);
-    //   },
-    // );
+    (await _loginUseCase.execute(
+            LoginUseCaseInput(loginObject.userName, loginObject.password)))
+        .fold(
+      (failure) {
+        // Left - Failure
+        print(failure.message);
+      },
+      (data) {
+        // Success -> data
+        print(data.customer?.name);
+      },
+    );
   }
 
   @override
